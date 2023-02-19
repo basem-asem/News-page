@@ -1,0 +1,100 @@
+:root{
+    --soft-red:  hsl(5, 85%, 63%);
+    --soft-orange:  hsl(35, 77%, 62%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+    --color: #5f5f79;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* start nav  */
+.navbar{
+    background-color: var(--Off-white);
+}
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:focus{
+    color: var(--soft-red);
+}
+
+.navbar .navbar-toggler:focus{
+    display: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]>img{
+    display: none;
+}
+.navbar .navbar-toggler .close{
+    display: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] .close{
+    display: block;
+}
+/* end nav  */
+/* start landing  */
+.landing .mob{
+    display: none;
+}
+@media (max-width: 375px) {
+    .landing .mob{
+        display: block;
+    }
+    .landing .desktop{
+        display: none;
+    }
+}
+.landing .web{
+    font-weight: 800;
+    font-size: 40px;
+}
+.landing .words{
+    color: var(--Grayish-blue);
+}
+.landing .button{
+    background-color: var(--soft-red);
+}
+.landing .button:hover{
+    background-color: var(--Very-dark-blue);
+}
+/* end landing  */
+/* start QA */
+.qa{
+    background-color: var(--Very-dark-blue);
+}
+.qa .new{
+    color: var(--soft-orange);
+}
+.qa .par{
+    color: var(--Grayish-blue);
+    font-size: 15px;
+    line-height: 1.8;
+}
+.qa .par:not(:last-child){
+    border-bottom: 1px solid var(--Dark-grayish-blue);
+    padding-bottom: 30px;
+}
+.qa .head{
+    color:white;
+    padding-top: 20px;
+}
+.qa .head:hover{
+    color: var(--soft-orange);
+    cursor: pointer;
+}
+/* end QA */
+/* start choose  */
+.choose .discription span{
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--Grayish-blue);
+}
+.choose .discription .hov:hover{
+    color: var(--soft-red);
+}
+.choose .discription p{
+    color: var(--Dark-grayish-blue);
+    font-size: 15px;
+    padding-right: 20px;
+}
+/* end choose  */
